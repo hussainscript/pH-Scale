@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .ph-scale {
+      height: 20px;
+      background: linear-gradient(to right, 
+        #ff0000 0%,     /* pH 0 - Strong Acid - Red */
+        #ff6600 10%,    /* pH 1 - Acidic */
+        #ff9900 20%,    /* pH 2 */
+        #ffcc00 30%,    /* pH 3 */
+        #ffff00 40%,    /* pH 4 - Neutral - Yellow */
+        #ccff00 50%,    /* pH 5 */
+        #99ff00 60%,    /* pH 6 */
+        #66ff00 70%,    /* pH 7 - Neutral - Green */
+        #33ff00 80%,    /* pH 8 */
+        #00ff00 90%,    /* pH 9 - Alkaline */
+        #00ff66 100%    /* pH 10 */
+      );
+    }
+
+    .legend {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      
+      color: #333;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="ph-scale"></div>
+  <div class="legend">
+    <div>pH 0 - Strong Acid</div>
+    <div>pH 7 - Neutral</div>
+    <div>pH 14 - Strong Alkaline</div>
+  </div>
+</body>
+</html>
